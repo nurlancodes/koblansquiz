@@ -1,0 +1,82 @@
+<!--index.html-->
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="./style.css" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="containerNew" style="width: 90%; height: 90%;">
+        <header>
+            <div class="timer">
+                <p>
+                    Vaqt:
+                    <span id="timer">
+                        0
+                    </span>
+                </p>
+            </div>
+        </header>
+
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" 
+                     id="start-screen">
+                     <div style="width: 1000px; margin-left: -100%; padding-top: 30%; text-align: left;">
+                    <h1 id="top" style="max-width: 90%;">
+                        Davlat va Huquq asoslari
+                    </h1>
+                    <h1>
+                        Testni tuzgan: Koblan Jumanazarov
+                    </h1>
+                    <p>
+                    Testlarni nafaqat yechish balkim to'gri va no'to'gri javoblarni ham bilishingiz mumkin. Boshlash uchun quyidagi "Boshlash"
+                    tugmasini bosing
+                    Omad !
+                    <img src="../img/quiz-11405328-9169453.webp" alt="3dquizicon" height="30%" width="30%" style="margin-left: 950px; z-index: -1; margin-top: -160px;">
+                    </p>
+                    <br>
+                    <button id="start" style="margin-left: 50%;">
+                        Boshlash
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options">
+                </div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>Tugadi!</h2>
+                <p>Natijangiz:
+                    <span id="score-final">
+                    </span>
+                </p>
+                <p>
+                    Ismingizni yozib qoldiring !
+                    <input type="text" 
+                           id="name" 
+                           max="3" />
+                    <button id="submit-score">
+                        Tasdiqlash
+                    </button>
+                </p>
+            </div>
+
+            <div id="feedback" 
+                 class="feedback hide">
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
